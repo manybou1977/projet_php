@@ -6,6 +6,7 @@ if (!isset($_SESSION['utilisateur']) || (isset($_SESSION['utilisateur']) && $_SE
     exit();
 
 }
+//
 
 // nécessaire au fonctionnement d'un formulaire:
 // attribut action sur la balise form inutile à renseigner si le traitement à lieu dans la même page

@@ -15,7 +15,7 @@ if (!empty($_POST)){
     $utilisateur=$verif-> fetch(PDO::FETCH_ASSOC);
     $email="";
     $password="";
-
+$t=true;
     if ($utilisateur){
 
 
@@ -26,6 +26,7 @@ if (!empty($_POST)){
             $_SESSION['messages']['info'][]= 'Bienvenue ' .$utilisateur['pseudo']. ' &#128522';
             header('location:./');
             exit();
+            //bonjour
 
         }else{
                   $password .= 'erreur sur le mot de passe';
